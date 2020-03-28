@@ -1,0 +1,228 @@
+//-----INFO-----
+  //Paul McWhorter tutorials
+   //Arduino Tutorial 5:Understanding Binary Numbers
+   //Arduino Tutorial 6: Build an LED Binary Counter
+   
+  //Date : March 23 2020
+  //By   : Grant Kendrick
+  //With help from Paul Mcwhorter Tutorial
+//-----STEPS-----
+
+//Set variables for leds
+//Set pin modes
+//Digital write high to the 1 pins
+
+//-----CODE-----
+
+  //-----Variables-----
+int  d1 = 13   ; //13
+int  d2 = 12   ; //12
+int  d3 = 11   ; //11
+int  d4 = 10   ; //10
+int  dy = 1000 ; //Delay Time
+
+//-----SETUP-----
+void setup(){
+//Set Pin Modes
+pinMode(13, OUTPUT);
+pinMode(12, OUTPUT);
+pinMode(11, OUTPUT);
+pinMode(10, OUTPUT);
+}
+
+
+//-----LOOP-----
+void loop(){
+//Write High/Low
+
+//x0000 (0 Zero)
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+delay(dy);
+
+//x0001 (1 One)
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, HIGH);
+
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x0010 (2 Two)
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, HIGH);
+digitalWrite(d4, LOW);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x0011 (3 Three)
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, HIGH);
+digitalWrite(d4, HIGH);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x0100 (4 Four)
+digitalWrite(d1, LOW);
+digitalWrite(d2, HIGH);
+digitalWrite(d3,LOW);
+digitalWrite(d4, LOW);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x0101 (5 Five)
+digitalWrite(d1, LOW);
+digitalWrite(d2, HIGH);
+digitalWrite(d3, LOW);
+digitalWrite(d4, HIGH);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x0110 (6 Six)
+digitalWrite(d1, LOW);
+digitalWrite(d2, HIGH);
+digitalWrite(d3, HIGH);
+digitalWrite(d4, LOW);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x0111 (7 Seven)
+digitalWrite(d1, LOW);
+digitalWrite(d2, HIGH);
+digitalWrite(d3, HIGH);
+digitalWrite(d4, HIGH);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x1000 (8 Eight)
+digitalWrite(d1, HIGH);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x1001 (9 Nine)
+
+digitalWrite(d1, HIGH);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, HIGH);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x1010 (10 Ten)
+digitalWrite(d1, HIGH);
+digitalWrite(d2, LOW);
+digitalWrite(d3, HIGH);
+digitalWrite(d4, LOW);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x1011 (11 Eleven)
+digitalWrite(d1, HIGH);
+digitalWrite(d2, LOW);
+digitalWrite (d3, HIGH);
+digitalWrite (d4, HIGH);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x1100 (12 Twelve)
+digitalWrite(d1, HIGH);
+digitalWrite(d2, HIGH);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+   
+//x1101 (13 Thirteen)
+digitalWrite(d1, HIGH);
+digitalWrite(d2, HIGH);
+digitalWrite(d3, LOW);
+digitalWrite(d4, HIGH);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x1110 (14 Fourteen)
+digitalWrite(d1, HIGH);
+digitalWrite(d2, HIGH);
+digitalWrite(d3, HIGH);
+digitalWrite(d4, LOW);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+//x1111 (15 Fifteen)
+digitalWrite(d1, HIGH);
+digitalWrite(d2, HIGH);
+digitalWrite(d3, HIGH);
+digitalWrite(d4, HIGH);
+delay(dy);
+
+digitalWrite(d1, LOW);
+digitalWrite(d2, LOW);
+digitalWrite(d3, LOW);
+digitalWrite(d4, LOW);
+
+}
