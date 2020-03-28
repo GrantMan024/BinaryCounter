@@ -10,7 +10,10 @@
 
 //Set variables for leds
 //Set pin modes
-//Digital write high to the 1 pins
+//Digital write high to the leds that represent 1s
+//Delay
+//Digital Write all LOW to clear LEDs
+//Repeat
 
 //-----CODE-----
 
